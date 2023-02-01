@@ -1013,6 +1013,7 @@ static NSString *const kSubtitleTrackDefaultLanguage = @"en";
     {
         [self.castDeviceManager requestDeviceStatus];
 
+        _currentVolumeLevel = volume;
         if (success)
             success(nil);
     }
