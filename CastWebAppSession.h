@@ -22,8 +22,6 @@
 #import "CastService.h"
 #import "WebAppSession.h"
 #import "MediaControl.h"
-#import "CastServiceChannel.h"
-
 
 @interface CastWebAppSession : WebAppSession
 

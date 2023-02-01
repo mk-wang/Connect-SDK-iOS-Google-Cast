@@ -20,11 +20,14 @@
 
 #define kConnectSDKCastServiceId @"Chromecast"
 
-#import <GoogleCast/GoogleCast.h>
-#import "CastServiceChannel.h"
 #import "VolumeControl.h"
+#import "CastService_Types.h"
+#import "Capability.h"
+#import "DeviceService.h"
+#import "MediaPlayer.h"
+#import "WebAppLauncher.h"
 
-@interface CastService : DeviceService <GCKDeviceManagerDelegate, MediaPlayer, MediaControl, VolumeControl, WebAppLauncher>
+@interface CastService : DeviceService <MediaPlayer, MediaControl, VolumeControl, WebAppLauncher>
 
 /*! The GCKDeviceManager that CastService is using internally to manage devices. */
 @property (nonatomic, retain, readonly) GCKDeviceManager *castDeviceManager;

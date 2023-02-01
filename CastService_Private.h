@@ -19,6 +19,7 @@
 //
 
 #import "CastService.h"
+#import <GoogleCast/GoogleCast.h>
 
 @interface CastService ()
 

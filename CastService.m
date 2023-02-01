@@ -34,7 +34,7 @@ static const NSInteger kSubtitleTrackIdentifier = 42;
 
 static NSString *const kSubtitleTrackDefaultLanguage = @"en";
 
-@interface CastService () <ServiceCommandDelegate, GCKMediaControlChannelDelegate>
+@interface CastService () <ServiceCommandDelegate, GCKMediaControlChannelDelegate, GCKDeviceManagerDelegate>
 
 @property (nonatomic, strong) MediaPlayStateSuccessBlock immediatePlayStateCallback;
 @property (nonatomic, strong) ServiceSubscription *playStateSubscription;
